@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">C3_6_boundservice</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_bound_client2">BoundClient2</string>
+    <string name="title_activity_client2">Client2</string>
+</resources>

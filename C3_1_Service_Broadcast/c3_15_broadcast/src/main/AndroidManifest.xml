@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.c3.vero.c3_15_broadcast" >
+
+    <!-- 定义权限-->
+    <permission android:name="vero.vero.vero" />
+    <!-- 使用权限-->
+    <uses-permission android:name="vero.vero.vero" />
+
+    <!--<uses-permission android:name="android.permission.RECEIVE_SMS" />-->
+    <uses-permission android:name="android.permission.SEND_SMS"/><!--添加权限-->
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".BroadcastReceiver"
+            android:label="@string/title_activity_broadcast_receiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="10" >
+                <action android:name="vero.vero.broadcast" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".BroadcastReceiver2"
+            android:label="BroadcastReceiver2"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="20" >
+                <action android:name="vero.vero.broadcast" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".SmsReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter android:priority="100">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
