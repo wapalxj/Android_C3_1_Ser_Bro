@@ -27,7 +27,7 @@ public class MusicPlayerService extends Service {
     @Override
     public void onCreate() {
         Log.i("MusicPlayerService", "onCreate");
-        mediaPlayer=MediaPlayer.create(MusicPlayerService.this, R.raw.music);
+        mediaPlayer=MediaPlayer.create(getApplicationContext(), R.raw.music);
         super.onCreate();
     }
     @Override
@@ -41,7 +41,7 @@ public class MusicPlayerService extends Service {
                 mediaPlayer.start();
                 break;
             case 2:
-                mediaPlayer.start();
+                mediaPlayer.pause();
                 break;
             case 3:
                 mediaPlayer.stop();

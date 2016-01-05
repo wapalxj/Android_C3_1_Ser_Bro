@@ -1,1 +1,1 @@
-include ':app', ':c3_2_service_lifcycle', ':c3_4_intentservice', ':c3_6_boundservice', ':c3_11_musicplayer', ':c3_15_broadcast'
+include ':app', ':c3_2_service_lifcycle', ':c3_4_intentservice', ':c3_6_boundservice', ':c3_11_musicplayer', ':c3_15_broadcast', ':c3_11_musicplayer2_excise'
