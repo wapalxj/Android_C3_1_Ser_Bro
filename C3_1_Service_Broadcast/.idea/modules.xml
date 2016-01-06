@@ -7,6 +7,9 @@
       <module fileurl="file://$PROJECT_DIR$/c3_11_musicplayer/c3_11_musicplayer.iml" filepath="$PROJECT_DIR$/c3_11_musicplayer/c3_11_musicplayer.iml" />
       <module fileurl="file://$PROJECT_DIR$/c3_11_musicplayer2_excise/c3_11_musicplayer2_excise.iml" filepath="$PROJECT_DIR$/c3_11_musicplayer2_excise/c3_11_musicplayer2_excise.iml" />
       <module fileurl="file://$PROJECT_DIR$/c3_15_broadcast/c3_15_broadcast.iml" filepath="$PROJECT_DIR$/c3_15_broadcast/c3_15_broadcast.iml" />
+      <module fileurl="file://$PROJECT_DIR$/c3_15_broadcast2_receive_system/c3_15_broadcast2_receive_system.iml" filepath="$PROJECT_DIR$/c3_15_broadcast2_receive_system/c3_15_broadcast2_receive_system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/c3_15_broadcast3_receiver/c3_15_broadcast3_receiver.iml" filepath="$PROJECT_DIR$/c3_15_broadcast3_receiver/c3_15_broadcast3_receiver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/c3_15_broadcast3_sender/c3_15_broadcast3_sender.iml" filepath="$PROJECT_DIR$/c3_15_broadcast3_sender/c3_15_broadcast3_sender.iml" />
       <module fileurl="file://$PROJECT_DIR$/c3_2_service_lifcycle/c3_2_service_lifcycle.iml" filepath="$PROJECT_DIR$/c3_2_service_lifcycle/c3_2_service_lifcycle.iml" />
       <module fileurl="file://$PROJECT_DIR$/c3_4_intentservice/c3_4_intentservice.iml" filepath="$PROJECT_DIR$/c3_4_intentservice/c3_4_intentservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/c3_6_boundservice/c3_6_boundservice.iml" filepath="$PROJECT_DIR$/c3_6_boundservice/c3_6_boundservice.iml" />

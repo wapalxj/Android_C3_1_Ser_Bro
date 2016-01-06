@@ -1,37 +1,45 @@
 package com.book.vero.c3_11_musicplayer2_excise;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
-
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+    private Button play;
+    private Button stop;
+    Intent intent;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        init();
     }
-
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+    public void onClick(View v) {
+        boolean isPlaying=false;
+        intent=new Intent(getApplicationContext(),MusicPlayer.class);
+        switch (v.getId()){
+            case R.id.btn_play:
+                intent.putExtra("play",1);
+                startService(intent);
+                break;
+            case R.id.btn_stop:
+                intent.putExtra("play",2);
+                startService(intent);
+                break;
         }
-
-        return super.onOptionsItemSelected(item);
     }
+    public void init(){
+        play= (Button) findViewById(R.id.btn_play);
+        stop= (Button) findViewById(R.id.btn_stop);
+        play.setOnClickListener(this);
+        stop.setOnClickListener(this);
+
+    }
+
+
 }

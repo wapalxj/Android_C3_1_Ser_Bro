@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.book.vero.c3_15_broadcast3_sender" >
+    <permission android:name="com.vero.authority1"/>
+    <uses-permission android:name="com.vero.authority1"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".demo01_childThread_to_parent"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Demo02_Authority_Bro_sender"
+            android:label="@string/title_activity_demo02__authority__bro_sender" >
+        </activity>
+    </application>
+
+</manifest>
