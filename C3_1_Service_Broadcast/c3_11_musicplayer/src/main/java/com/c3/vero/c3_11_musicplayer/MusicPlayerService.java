@@ -11,6 +11,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import java.io.IOException;
+
 public class MusicPlayerService extends Service {
     private int mId;
     private MediaPlayer mediaPlayer;
@@ -27,7 +29,7 @@ public class MusicPlayerService extends Service {
     @Override
     public void onCreate() {
         Log.i("MusicPlayerService", "onCreate");
-        mediaPlayer=MediaPlayer.create(getApplicationContext(), R.raw.music);
+        mediaPlayer=MediaPlayer.create(getApplicationContext(), R.raw.aaa);
         super.onCreate();
     }
     @Override
@@ -45,8 +47,12 @@ public class MusicPlayerService extends Service {
                 break;
             case 3:
                 mediaPlayer.stop();
-                mediaPlayer.release();
-                mediaPlayer=null;
+                try {
+                    mediaPlayer.prepare();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
                 break;
             default:
                 break;
@@ -58,6 +64,8 @@ public class MusicPlayerService extends Service {
     public void onDestroy() {
         Log.i("MusicPlayerService","onDestroyonDestroyonDestroy");
         super.onDestroy();
+        mediaPlayer.release();
+        mediaPlayer=null;
     }
 
 
