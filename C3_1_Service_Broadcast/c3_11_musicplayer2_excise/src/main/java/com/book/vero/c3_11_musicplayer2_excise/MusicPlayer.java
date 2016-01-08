@@ -75,9 +75,9 @@ public class MusicPlayer extends Service{
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-                Intent iPause =new Intent(Config.musicIsStop);
-                iPause.putExtra("isStop","isStop");
-                sendBroadcast(iPause);
+                Intent IsStop =new Intent(Config.musicIsStop);
+                IsStop.putExtra("isStop","isStop");
+                sendBroadcast(IsStop);
                 break;
         }
         return super.onStartCommand(intent, flags, startId);

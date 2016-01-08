@@ -20,6 +20,8 @@
             <option value="$PROJECT_DIR$/c3_2_service_lifcycle" />
             <option value="$PROJECT_DIR$/c3_4_intentservice" />
             <option value="$PROJECT_DIR$/c3_6_boundservice" />
+            <option value="$PROJECT_DIR$/c3_6_boundservice2" />
+            <option value="$PROJECT_DIR$/c3_6_boundservice3_messenger" />
           </set>
         </option>
       </GradleProjectSettings>

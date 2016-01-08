@@ -13,6 +13,8 @@
       <module fileurl="file://$PROJECT_DIR$/c3_2_service_lifcycle/c3_2_service_lifcycle.iml" filepath="$PROJECT_DIR$/c3_2_service_lifcycle/c3_2_service_lifcycle.iml" />
       <module fileurl="file://$PROJECT_DIR$/c3_4_intentservice/c3_4_intentservice.iml" filepath="$PROJECT_DIR$/c3_4_intentservice/c3_4_intentservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/c3_6_boundservice/c3_6_boundservice.iml" filepath="$PROJECT_DIR$/c3_6_boundservice/c3_6_boundservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/c3_6_boundservice2/c3_6_boundservice2.iml" filepath="$PROJECT_DIR$/c3_6_boundservice2/c3_6_boundservice2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/c3_6_boundservice3_messenger/c3_6_boundservice3_messenger.iml" filepath="$PROJECT_DIR$/c3_6_boundservice3_messenger/c3_6_boundservice3_messenger.iml" />
     </modules>
   </component>
 </project>
