@@ -105,6 +105,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             if (state.equals(Config.musicIsStop)){
                 play.setText("开始");
                 seekBar.setProgress(0);
+
             }
         }
     }

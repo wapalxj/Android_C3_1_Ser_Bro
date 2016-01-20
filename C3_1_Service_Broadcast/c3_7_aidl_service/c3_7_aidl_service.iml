@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module external.linked.project.id=":c3_9_test_nrebind" external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$/.." external.system.id="GRADLE" external.system.module.group="C3_Service_Broadcast" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+<module external.linked.project.id=":c3_7_aidl_service" external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$/.." external.system.id="GRADLE" external.system.module.group="C3_1_Service_Broadcast" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
     <facet type="android-gradle" name="Android-Gradle">
       <configuration>
-        <option name="GRADLE_PROJECT_PATH" value=":c3_9_test_nrebind" />
+        <option name="GRADLE_PROJECT_PATH" value=":c3_7_aidl_service" />
       </configuration>
     </facet>
     <facet type="android" name="Android">

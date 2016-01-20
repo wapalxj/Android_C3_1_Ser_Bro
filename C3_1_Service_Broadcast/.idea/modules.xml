@@ -15,6 +15,7 @@
       <module fileurl="file://$PROJECT_DIR$/c3_6_boundservice/c3_6_boundservice.iml" filepath="$PROJECT_DIR$/c3_6_boundservice/c3_6_boundservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/c3_6_boundservice2/c3_6_boundservice2.iml" filepath="$PROJECT_DIR$/c3_6_boundservice2/c3_6_boundservice2.iml" />
       <module fileurl="file://$PROJECT_DIR$/c3_6_boundservice3_messenger/c3_6_boundservice3_messenger.iml" filepath="$PROJECT_DIR$/c3_6_boundservice3_messenger/c3_6_boundservice3_messenger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/c3_7_aidl_service/c3_7_aidl_service.iml" filepath="$PROJECT_DIR$/c3_7_aidl_service/c3_7_aidl_service.iml" />
     </modules>
   </component>
 </project>

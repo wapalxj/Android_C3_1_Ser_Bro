@@ -20,7 +20,12 @@
         <service
             android:name=".MyBoundService"
             android:enabled="true"
-            android:exported="true" >
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vnix.MyBoundService" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </service>
 
         <activity

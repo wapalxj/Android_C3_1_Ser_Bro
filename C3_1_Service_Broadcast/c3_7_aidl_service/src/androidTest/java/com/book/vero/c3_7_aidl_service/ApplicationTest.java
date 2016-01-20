@@ -1,4 +1,4 @@
-package com.c3.vero.c3_9_test_nrebind;
+package com.book.vero.c3_7_aidl_service;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

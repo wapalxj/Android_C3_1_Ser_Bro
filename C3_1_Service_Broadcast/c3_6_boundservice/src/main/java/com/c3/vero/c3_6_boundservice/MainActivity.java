@@ -43,7 +43,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 intent = new Intent(MainActivity.this, MyBoundService.class);
+//                intent=new Intent("com.vnix.MyBoundService");
                 bindService(intent,conn, Service.BIND_AUTO_CREATE);
+
             }
         });
 
