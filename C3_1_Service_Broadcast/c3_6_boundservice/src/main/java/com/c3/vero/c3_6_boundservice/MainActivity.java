@@ -42,9 +42,10 @@ public class MainActivity extends AppCompatActivity {
         bind.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                intent = new Intent(MainActivity.this, MyBoundService.class);
-//                intent=new Intent("com.vnix.MyBoundService");
-                bindService(intent,conn, Service.BIND_AUTO_CREATE);
+//                intent = new Intent(MainActivity.this, MyBoundService.class);
+                intent=new Intent("com.vnix.MyBoundService");
+                intent.setPackage("com.c3.vero.c3_6_boundservice");
+                bindService(intent, conn, Service.BIND_AUTO_CREATE);
 
             }
         });
