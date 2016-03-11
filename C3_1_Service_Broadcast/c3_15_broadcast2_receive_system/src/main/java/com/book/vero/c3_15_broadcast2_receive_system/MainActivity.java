@@ -10,6 +10,7 @@ import android.os.BatteryManager;
 import android.support.v4.view.animation.FastOutLinearInInterpolator;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.telephony.TelephonyManager;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView batteryTv;
     private TextView powerTv;
     private TextView netTv;
+    private TextView headSetTv;
     MyReceiver receiver;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         filter.addAction(Intent.ACTION_BATTERY_CHANGED);
         filter.addAction(Intent.ACTION_POWER_DISCONNECTED);
         filter.addAction(Intent.ACTION_POWER_CONNECTED);
+        filter.addAction(Intent.ACTION_HEADSET_PLUG);
         filter.addAction("android.net.conn.CONNECTIVITY_CHANGE");
 
         receiver=new MyReceiver();
@@ -55,6 +58,15 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case Intent.ACTION_POWER_CONNECTED:
                         powerTv.setText("电源连接了");
+                    break;
+                case Intent.ACTION_HEADSET_PLUG:
+                    if(intent.getIntExtra("state",0)==1){
+                        headSetTv.setText("耳机插入了！");
+                    }
+                    if(intent.getIntExtra("state",0)==0){
+                        headSetTv.setText("耳机拔出了！");
+                    }
+
                     break;
                 case "android.net.conn.CONNECTIVITY_CHANGE":
                     String re="网络连接:";
@@ -101,11 +113,13 @@ public class MainActivity extends AppCompatActivity {
         batteryTv= (TextView) findViewById(R.id.batteryTv);
         powerTv= (TextView) findViewById(R.id.powerTv);
         netTv= (TextView) findViewById(R.id.netTv);
+        headSetTv=(TextView)findViewById(R.id.headSetTv);
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
         unregisterReceiver(receiver);
+
     }
 }

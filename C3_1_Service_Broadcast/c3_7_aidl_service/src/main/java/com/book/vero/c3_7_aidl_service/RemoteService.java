@@ -7,8 +7,8 @@ import android.os.RemoteException;
 import android.util.Log;
 
 public class RemoteService extends Service{
-    private class Agent extends IService.Stub{
 
+    private class Agent extends IService.Stub{
         @Override
         public void basicTypes(int anInt, long aLong, boolean aBoolean, float aFloat, double aDouble, String aString) throws RemoteException {
 

@@ -91,6 +91,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             String state=intent.getAction();
             if (state.equals(Config.musicIsPause)||state.equals(Config.musicIsStop)){
                 play.setText("开始");
+                if (state.equals(Config.musicIsStop)){
+                    seekBar.setProgress(0);
+                    timeTv.setText(transferTime(0));
+                }
+
             }
             if (state.equals(Config.musicIsPlaying)){
                 play.setText("暂停");
@@ -101,11 +106,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 seekBar.setProgress(currentTime);
                 totalTimeTv.setText(transferTime(totalTime));
                 timeTv.setText(transferTime(currentTime));
-            }
-            if (state.equals(Config.musicIsStop)){
-                play.setText("开始");
-                seekBar.setProgress(0);
-
             }
         }
     }
