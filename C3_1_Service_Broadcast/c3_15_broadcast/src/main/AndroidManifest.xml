@@ -35,6 +35,8 @@
                 <action android:name="vero.vero.broadcast" />
             </intent-filter>
         </receiver>
+
+
         <receiver
             android:name=".BroadcastReceiver2"
             android:label="BroadcastReceiver2"

@@ -40,7 +40,7 @@ public class MusicPlayer extends Service{
         switch (flag){
             case 1:
                 if (player.isPlaying()){
-                    player.pause();
+//                    player.pause();
                     Intent iPause =new Intent(Config.musicIsPause);
                     iPause.putExtra("isPause", "isPause");
                     sendBroadcast(iPause);

@@ -3,11 +3,33 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="distributionType" value="LOCAL" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="gradleHome" value="C:\Program Files\Android\Android Studio\gradle\gradle-2.4" />
-        <option name="gradleJvm" value="1.8" />
         <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/c3_11_musicplayer" />
+            <option value="$PROJECT_DIR$/c3_11_musicplayer2_excise" />
+            <option value="$PROJECT_DIR$/c3_15_broadcast" />
+            <option value="$PROJECT_DIR$/c3_15_broadcast2_receive_system" />
+            <option value="$PROJECT_DIR$/c3_15_broadcast2_receive_system2_ipdialer" />
+            <option value="$PROJECT_DIR$/c3_15_broadcast2_receive_system3_sms" />
+            <option value="$PROJECT_DIR$/c3_15_broadcast3_receiver" />
+            <option value="$PROJECT_DIR$/c3_15_broadcast3_sender" />
+            <option value="$PROJECT_DIR$/c3_2_service_lifcycle" />
+            <option value="$PROJECT_DIR$/c3_4_intentservice" />
+            <option value="$PROJECT_DIR$/c3_6_boundservice" />
+            <option value="$PROJECT_DIR$/c3_6_boundservice2" />
+            <option value="$PROJECT_DIR$/c3_6_boundservice3_mixd_with_startservice" />
+            <option value="$PROJECT_DIR$/c3_6_boundservice4_mix_mucisplayer" />
+            <option value="$PROJECT_DIR$/c3_7_aidl_client" />
+            <option value="$PROJECT_DIR$/c3_7_aidl_service" />
+            <option value="$PROJECT_DIR$/c3_8_messenger_client" />
+            <option value="$PROJECT_DIR$/c3_8_messenger_service" />
+          </set>
+        </option>
+        <option name="myModules">
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
